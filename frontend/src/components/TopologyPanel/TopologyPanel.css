@@ -1,0 +1,243 @@
+/* Content area */
+.content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.query-bar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.query-bar h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected-name {
+  color: #3366cc;
+}
+
+.selected-category {
+  font-size: 0.7rem;
+  color: #fff;
+  background: #3366cc;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.query-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.query-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.query-controls input[type="number"] {
+  width: 80px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.query-controls button {
+  padding: 8px 24px;
+  background: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* History navigation */
+.history-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-btn {
+  padding: 6px 10px;
+  background: #f0f1f3;
+  color: #555;
+  border: 1px solid #d0d3d8;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: #e2e5ea;
+  border-color: #bbb;
+}
+
+.nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.nav-info {
+  font-size: 0.75rem;
+  color: #999;
+  min-width: 40px;
+  text-align: center;
+  user-select: none;
+}
+
+.query-controls button:hover:not(:disabled) {
+  background: #2548a0;
+}
+
+.query-controls button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Topology */
+.topology-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.topology-container h3 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.topology-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.layer {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.layer-title {
+  background: #f8f9fa;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.layer-1 .layer-title { background: #fff3e0; }
+.layer-2 .layer-title { background: #e8f5e9; }
+.layer-3 .layer-title { background: #e3f2fd; }
+.layer-4 .layer-title { background: #fce4ec; }
+.layer-5 .layer-title { background: #f3e5f5; }
+.layer-6 .layer-title { background: #ede7f6; }
+
+.layer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+}
+
+.material-card {
+  background: #f8f9fa;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 10px 14px;
+  min-width: 120px;
+  text-align: center;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.material-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.material-card.clickable {
+  cursor: pointer;
+}
+
+.material-card.clickable:hover {
+  border-color: #3366cc;
+  box-shadow: 0 2px 12px rgba(51, 102, 204, 0.2);
+}
+
+.mat-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.mat-eng {
+  color: #aaa;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.mat-category {
+  color: #fff;
+  background: #7c8a9d;
+  font-size: 0.6rem;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.mat-id {
+  color: #ccc;
+  font-size: 0.65rem;
+  margin-top: 2px;
+}
+
+.mat-count {
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3366cc;
+}
+
+/* Placeholder & Error */
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
