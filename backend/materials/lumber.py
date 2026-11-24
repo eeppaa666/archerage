@@ -25,7 +25,7 @@ class NuriForestLumber(Meterial):
             MysteriousGardenPowder(): 5,
             ViscousGlossyOil(): 1,
         }, 4)
-        RegisterName(self.item_id, "Nuri Forest Lumber", "nuri 木材")
+        RegisterName(self.item_id, "Nuri Forest Lumber", "纤维木材")
 
 class BlazingNuriForestLumber(Meterial):
     item_id = GetNextGlobalId()
@@ -36,4 +36,4 @@ class BlazingNuriForestLumber(Meterial):
             DragonEssenceStabilizer(): 25,
             FlamingLog(): 6
         }, 5)
-        RegisterName(self.item_id, "Blazing Nuri Forest Lumber", "炽热的 nuri木材")
+        RegisterName(self.item_id, "Blazing Nuri Forest Lumber", "高密度木材")
