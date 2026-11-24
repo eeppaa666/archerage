@@ -33,7 +33,7 @@ class MetalWheelFrame(Meterial):
             YuanJingmu(): 4,
             SturdyIngot(): 1
         }, 3)
-        RegisterName(self.item_id, "", "金属轮框")
+        RegisterName(self.item_id, "", "金属轮框x2")
 
 class S200VehicleFrame(Meterial):
     item_id = GetNextGlobalId()
@@ -54,8 +54,8 @@ class SportsCarChassis(Meterial):
             CarpentryWorkbench(): 30,
             FishOil(): 5,
             NaturalRubber(): 50,
-            MetalWheelFrame(): 2,
-            OceanWarm(): 6,
+            MetalWheelFrame(): 1,
+            OceanWarm(): 8,
         }, 3)
         RegisterName(self.item_id, "sports car chassis", "跑车底盘")
 
