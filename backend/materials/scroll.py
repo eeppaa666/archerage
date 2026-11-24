@@ -44,4 +44,3 @@ class ScrollToothedEdgeSkateboard(Meterial):
         }, 6)
         RegisterName(self.item_id, "", "卷轴：锯齿滑板")
 
-

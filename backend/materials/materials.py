@@ -79,47 +79,6 @@ class Meterial:
 
         return output
 
-    # def Topology(self, cnt:int, not_need=set(), cur_layer=0)->Dict[int, Dict[Any, int]]:
-    #     ret = dict()
-    #     if cur_layer != 0:
-    #         ret.setdefault(cur_layer, dict())[self] = cnt
-
-    #     # merge
-    #     for key, val in self.neededs.items():
-    #         if key in not_need: continue
-    #         if key.neededs == None: continue
-    #         next = key.Topology(val * cnt, not_need, cur_layer + 1)
-    #         for layer, items in next.items():
-    #             ret.setdefault(layer, dict())
-    #             for m, c in items.items():
-    #                 ret[layer].setdefault(m, 0)
-    #                 ret[layer][m] += c
-
-    #     # none needs 扩散
-    #     for key, val in self.neededs.items():
-    #         if key in not_need: continue
-    #         if key.neededs == None: continue
-    #         next = key.Topology(val * cnt, not_need, cur_layer + 1)
-    #         end_layer_items = sorted(next.items())[-1]
-    #         for layer, items in ret.items():
-    #             if layer <= end_layer_items[0]: continue
-    #             for m, c in end_layer_items[1].items():
-    #                 ret[layer].setdefault(m, 0)
-    #                 ret[layer][m] += c
-
-    #     for key, val in self.neededs.items():
-    #         if key in not_need:
-    #             continue
-    #         if key.neededs != None: continue
-    #         ret.setdefault(cur_layer + 1, dict())
-
-    #         for layer, items in ret.items():
-    #             if layer == cur_layer: continue
-    #             ret[layer].setdefault(key, 0)
-    #             ret[layer][key] += val * cnt
-
-    #     return ret
-
     def __hash__(self):
         return hash(self.id)
 

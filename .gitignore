@@ -2,3 +2,4 @@
 .pytest*
 *.log
 **/__pycache__
+rag

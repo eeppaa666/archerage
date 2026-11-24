@@ -1,7 +1,5 @@
 from .materials import *
 
-
-
 class DawnsdropBoots(Meterial):
     item_id = GetNextGlobalId()
     def __init__(self) -> None:
